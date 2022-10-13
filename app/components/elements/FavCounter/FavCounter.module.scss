@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+  margin-right: 27px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: -28px;
+    display: inline-block;
+    height: 32px;
+    width: 1px;
+    background-color: $color-light;
+  }
+}
+.counter {
+  @include flex($align: center, $justify: center);
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: $color-light;
+}

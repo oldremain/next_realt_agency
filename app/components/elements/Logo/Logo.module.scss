@@ -1,0 +1,18 @@
+.logo {
+  @include flex($align: center);
+  gap: 13px;
+}
+.logo-text {
+  @include flex($justify: center, $align: center, $direction: column);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.23;
+  color: $color-light;
+}
+.logo-text--styled {
+  font-size: 2.2rem;
+  line-height: 1.22;
+  color: $logo-color;
+  align-self: flex-start;
+  text-transform: uppercase;
+}

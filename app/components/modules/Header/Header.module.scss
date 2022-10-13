@@ -1,0 +1,11 @@
+.header {
+  padding: 18px 0 17px;
+  background-color: #265653;
+}
+.content {
+  @include flex($justify: space-between, $align: center);
+}
+.controls {
+  @include flex($align: center);
+  gap: 26px;
+}

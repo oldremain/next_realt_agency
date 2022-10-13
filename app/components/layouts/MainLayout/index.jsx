@@ -1,5 +1,7 @@
+import Header from "@components/modules/Header";
+
 const MainLayout = () => {
-  return <div>Main Layout</div>;
+  return <Header />;
 };
 
 export default MainLayout;

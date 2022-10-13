@@ -1,0 +1,53 @@
+.form-control {
+  position: relative;
+  margin: 0 !important;
+}
+
+.label {
+  display: none;
+}
+.input {
+  margin-top: 0 !important;
+  padding: 10px 11px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: $color-light;
+  border: 1px solid $color-light;
+  border-radius: 4px;
+  width: 215px;
+  height: 36px;
+  transition: all 280ms;
+
+  &::after {
+    border-bottom: none;
+  }
+  &::before {
+    border-bottom: none;
+  }
+  &:hover::before {
+    border-bottom: none !important;
+  }
+
+  &:hover {
+    border-color: darken($color-light, 50%);
+  }
+
+  input {
+    padding: 0;
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1.31;
+      color: $color-light;
+    }
+  }
+}
+.submit-button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 38px;
+  transform: translateY(-50%);
+}
