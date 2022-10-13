@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import MainLayout from "@components/layouts/MainLayout";
 import Breadcrumbs from "@components/modules/Breadcrumbs";
+import MainForm from "@components/modules/MainForm";
 
 const Home = () => {
   return (
@@ -12,6 +13,9 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Breadcrumbs />
+      <main>
+        <MainForm />
+      </main>
     </>
   );
 };
