@@ -1,6 +1,6 @@
 import ResetIcon from "@public/icons/reset.svg";
 
-import styles from "./MainForm.module.scss";
+import styles from "../MainForm.module.scss";
 
 const ResetButton = () => {
   return (

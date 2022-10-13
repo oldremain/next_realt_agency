@@ -1,4 +1,4 @@
-import styles from "./MainForm.module.scss";
+import styles from "../MainForm.module.scss";
 
 const rooms_list = [
   {
