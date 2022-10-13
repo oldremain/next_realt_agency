@@ -1,0 +1,37 @@
+.breadcrumbs {
+  padding: 23px 0 26px;
+}
+
+.breadcrumbs-list {
+  @include flex;
+  gap: 25px;
+}
+
+.breadcrumbs-list__item {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.25;
+  color: $color--dark;
+  transition: all 200ms;
+
+  &:not(:last-child)::after {
+    content: "";
+    position: relative;
+    left: 7px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid $color-gray-light;
+    border-right: 1px solid $color-gray-light;
+    transform: rotate(45deg);
+    vertical-align: middle;
+  }
+
+  &:last-child {
+    color: $color-gray-light;
+  }
+
+  &:not(:last-child):hover {
+    border-bottom: 1px solid $color-gray-light;
+  }
+}

@@ -1,7 +1,14 @@
 import Header from "@components/modules/Header";
+import HeaderNavigation from "@components/modules/HeaderNavigation";
 
-const MainLayout = () => {
-  return <Header />;
+const MainLayout = ({ children }) => {
+  return (
+    <>
+      <Header />
+      <HeaderNavigation />
+      {children}
+    </>
+  );
 };
 
 export default MainLayout;

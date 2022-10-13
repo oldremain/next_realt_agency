@@ -13,7 +13,7 @@
   font-size: 1.2rem;
   line-height: 1.3;
   color: $color-light;
-  border: 1px solid $color-light;
+  border: 1px solid darken($color-light, 50%);
   border-radius: 4px;
   width: 215px;
   height: 36px;
@@ -30,7 +30,11 @@
   }
 
   &:hover {
-    border-color: darken($color-light, 50%);
+    border-color: $color-light;
+  }
+
+  &:focus-within {
+    border-color: $color-light;
   }
 
   input {

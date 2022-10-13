@@ -1,0 +1,37 @@
+.wrapper {
+  //padding: 20px 0;
+  border-bottom: 2px solid $header-bg-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navigation-list {
+  @include flex($justify: space-between, $align: center);
+}
+
+.navigation-list__item {
+  //padding: 20px 10px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  color: $color-gray;
+  transition: all 200ms;
+
+  &:first-child {
+    font-weight: 700;
+    color: $header-bg-color;
+  }
+
+  &:hover:not(:first-child) {
+    background-color: $header-bg-color;
+    color: $color-light;
+  }
+}
+
+.navigation-list__link {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.chevron-icon {
+  padding-left: 10px;
+}

@@ -6,7 +6,7 @@ export const selectStyle = {
     lineHeight: 1.31,
     color: "#FFFFFF",
   },
-  "& .MuiInputLabel-root, & .Mui-focused .MuiInputLabel-root": {
+  "& .MuiInputLabel-root, & .Mui-focused.MuiInputLabel-root": {
     fontWeight: 500,
     fontSize: "1.2rem",
     lineHeight: 1.3,
