@@ -11,18 +11,17 @@ import Link from "next/link";
 const Card = () => {
   return (
     <li className={styles.container}>
-      <Link href="#">
-        <a>
-          <CardImage />
-          <Price />
-          <div className={styles.body}>
-            <Address />
-            <Info />
-          </div>
-          <Badges />
-          <Watcher />
-        </a>
-      </Link>
+      <CardImage />
+      <Price />
+      <div className={styles.body}>
+        <Address />
+        <Info />
+      </div>
+      <Badges />
+      <Watcher />
+      {/* <Link href="#">
+        <a className={styles.link}></a>
+      </Link> */}
     </li>
   );
 };
