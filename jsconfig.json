@@ -5,7 +5,7 @@
       "@components/*": ["app/components/*"],
       "@styles/*": ["app/styles/*"],
       "@public/*": ["public/*"]
-    }
-  },
-  "jsxImportSource": "@emotion/react"
+    },
+    "jsxImportSource": "@emotion/react"
+  }
 }
