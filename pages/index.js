@@ -3,6 +3,7 @@ import Head from "next/head";
 import MainLayout from "@components/layouts/MainLayout";
 import Breadcrumbs from "@components/modules/Breadcrumbs";
 import MainForm from "@components/modules/MainForm";
+import Cards from "@components/modules/Cards";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Breadcrumbs />
       <main>
         <MainForm />
+        <Cards />
       </main>
     </>
   );

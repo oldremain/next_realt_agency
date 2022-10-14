@@ -1,0 +1,191 @@
+.container {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #eae9e9;
+  transition: all 250ms;
+
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.image {
+  position: relative;
+  display: block;
+  height: 230px;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -1px;
+    display: block;
+    height: 100%;
+    width: 21%;
+    backdrop-filter: blur(150px);
+    background: transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-top-right-radius: 10px;
+    top: 0;
+    right: -1px;
+    display: block;
+    height: 100%;
+    width: 21%;
+    backdrop-filter: blur(10px);
+    background: transparent;
+  }
+}
+
+.price {
+  position: absolute;
+  z-index: 2;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 264px;
+  padding: 17px 13px;
+  background-color: $color-gray-lighter;
+  border-radius: 8px;
+}
+
+.price-left,
+.price-right,
+.price-delimeter {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  color: $color-dark-light;
+}
+
+.price-delimeter {
+  padding: 0 7px;
+}
+
+.price-right {
+  font-weight: 700;
+}
+
+.body {
+  padding: 49px 20px 20px;
+}
+
+.address {
+  @include flex($direction: column);
+  gap: 10px;
+  position: relative;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #c8c6c6;
+
+  span:first-child {
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  span:last-child {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.25;
+  }
+}
+
+.action-icon {
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover > .icon path + path {
+    fill: #ff5555;
+  }
+
+  svg path + path {
+    fill: $color-light;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+  }
+}
+
+.info-list {
+  @include flex($direction: column);
+  gap: 6px;
+  padding-top: 10px;
+}
+
+.info-list__row {
+  @include flex($justify: space-between);
+  width: 100%;
+}
+
+.info-list__col {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.25;
+
+  &:last-child {
+    font-weight: 600;
+    text-align: end;
+  }
+}
+
+.badges {
+  @include flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  z-index: 3;
+}
+
+.badges__item {
+  @include flex($justify: center, $align: center);
+  gap: 3px;
+  padding: 5px 8px;
+  background-color: $color-persimmon;
+  color: $color-light;
+  border-radius: 4px;
+}
+
+.watcher-list {
+  @include flex;
+  gap: 7px;
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  z-index: 3;
+}
+
+.watcher-list__item {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(38, 86, 83, 0.5);
+  color: $color-light;
+  transition: all 200ms;
+
+  &:hover {
+    background: $header-bg-color;
+  }
+}
+
+.watcher-list__link {
+  @include flex($justify: center, $align: center);
+  width: 100%;
+  height: 100%;
+}

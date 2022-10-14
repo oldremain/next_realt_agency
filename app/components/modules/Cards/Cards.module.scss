@@ -1,0 +1,19 @@
+.section {
+  padding: 50px 0 100px;
+}
+
+.heading {
+  @include visually-hidden;
+}
+
+.filter {
+  @include flex($justify: flex-end);
+}
+
+.cards-container {
+  margin: 30px -15px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+  column-gap: 18px;
+  row-gap: 24px;
+}
