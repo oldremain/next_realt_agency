@@ -2,23 +2,20 @@ import { Box, FormControl, Input, InputLabel, IconButton } from "@mui/material";
 
 import SearchIcon from "@public/icons/search.svg";
 
-import styles from "./SearchForm.module.scss";
+import { formControlStyles, buttonStyles } from "./styles";
 
 const SearchForm = ({ value, onChange, onSubmit }) => {
   return (
     <Box component="form" autoComplete="off" onSubmit={onSubmit}>
-      <FormControl className={styles["form-control"]}>
-        <InputLabel htmlFor="search" className={styles.label}>
-          Search
-        </InputLabel>
+      <FormControl sx={formControlStyles}>
+        <InputLabel htmlFor="search">Search</InputLabel>
         <Input
           id="search"
           value={value}
           placeholder="Поиск по лоту"
           onChange={onChange}
-          className={styles.input}
         />
-        <IconButton aria-label="search" className={styles["submit-button"]}>
+        <IconButton aria-label="search" sx={buttonStyles}>
           <SearchIcon />
         </IconButton>
       </FormControl>
