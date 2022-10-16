@@ -1,0 +1,68 @@
+.aside {
+  @include flex;
+  position: relative;
+  gap: 20px;
+  padding: 36px 46px 41px 41px;
+  margin-bottom: 60px;
+  border-radius: 4px;
+  background-color: $color-alabaster;
+}
+
+.aside__left {
+  max-width: 654px;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.33;
+}
+
+.word-accent {
+  position: relative;
+  z-index: 1;
+
+  .circle-icon--sm {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.badges-list {
+  @include flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.social-list {
+  @include flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.aside__right {
+  position: absolute;
+  top: 13px;
+  left: 55%;
+
+  span:first-child {
+    z-index: 2;
+  }
+
+  span:last-child {
+    top: -265px;
+    left: 305px;
+    z-index: 1;
+  }
+}
+
+.circle-icon--lg {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+}

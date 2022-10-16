@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import CardImage from "./Image";
 import Price from "./Price";
 import Address from "./Address";
@@ -6,7 +8,6 @@ import Badges from "./Badges";
 import Watcher from "./Watcher";
 
 import styles from "./Card.module.scss";
-import Link from "next/link";
 
 const Card = () => {
   return (

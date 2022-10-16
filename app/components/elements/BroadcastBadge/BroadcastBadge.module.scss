@@ -1,0 +1,19 @@
+.badge {
+  @include flex;
+  width: fit-content;
+  padding: 6px 10px;
+  background: $color-mercury;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  line-height: 1.25;
+  color: $color-tundora;
+}
+
+.label {
+  margin-right: 4px;
+  font-weight: 500;
+}
+
+.value {
+  font-weight: 600;
+}

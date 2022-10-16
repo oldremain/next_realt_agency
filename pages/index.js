@@ -4,6 +4,8 @@ import MainLayout from "@components/layouts/MainLayout";
 import Breadcrumbs from "@components/modules/Breadcrumbs";
 import MainForm from "@components/modules/MainForm";
 import Cards from "@components/modules/Cards";
+import Banner from "@components/modules/Banner";
+import Pagination from "@components/modules/Pagination";
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
       <main>
         <MainForm />
         <Cards />
+        <Banner />
+        <Pagination />
       </main>
     </>
   );
