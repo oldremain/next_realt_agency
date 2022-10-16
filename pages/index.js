@@ -6,6 +6,8 @@ import MainForm from "@components/modules/MainForm";
 import Cards from "@components/modules/Cards";
 import Banner from "@components/modules/Banner";
 import Pagination from "@components/modules/Pagination";
+import Decor from "@components/modules/Decor";
+import GoogleMap from "@components/modules/GoogleMap";
 
 const Home = () => {
   return (
@@ -21,6 +23,8 @@ const Home = () => {
         <Cards />
         <Banner />
         <Pagination />
+        <Decor />
+        <GoogleMap />
       </main>
     </>
   );

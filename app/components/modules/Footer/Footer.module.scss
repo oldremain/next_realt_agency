@@ -1,0 +1,22 @@
+.footer {
+  padding: 100px 116px;
+  background-color: $color-alabaster;
+}
+
+.heading {
+  margin-bottom: 35px;
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 1.22;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 170px;
+}
+
+.socials {
+  @include flex($direction: column);
+  gap: 13px;
+}

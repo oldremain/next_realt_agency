@@ -18,6 +18,9 @@ export const paginationStyles = {
     lineHeight: 1.3,
     color: "#FFFFFF",
   },
+  "& .MuiPaginationItem-root.Mui-selected:hover": {
+    background: "#265653",
+  },
   "& .MuiPaginationItem-icon": {
     fontSize: 20,
     fill: "#01383D",

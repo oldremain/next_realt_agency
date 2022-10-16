@@ -1,0 +1,28 @@
+.aside {
+  padding: 82px 0 101px;
+}
+
+.heading {
+  @include visually-hidden;
+}
+
+.content {
+  @include flex;
+  border: 1px solid $color-light;
+  border-radius: 10px;
+  background-color: $color-alabaster;
+  overflow: hidden;
+}
+
+.image {
+  align-self: stretch;
+}
+
+.text {
+  padding: 60px 71px 58px 50px;
+  align-self: center;
+  justify-self: center;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.45;
+}

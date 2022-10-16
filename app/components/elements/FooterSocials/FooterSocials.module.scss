@@ -1,0 +1,17 @@
+.heading {
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.31;
+}
+
+.list {
+  @include flex($align: center);
+  gap: 8px;
+}
+
+.item {
+  @include flex($align: center, $justify: center);
+  width: 45px;
+  height: 48px;
+}
