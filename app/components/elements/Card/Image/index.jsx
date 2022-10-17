@@ -1,14 +1,14 @@
-import Image from "next/image";
+import Image from "next/future/image";
 
-import path from "@public/images/apartaments/image1.jpg";
+import path from "@public/images/image.png";
 
 import styles from "../Card.module.scss";
 
 const CardImage = () => {
   return (
-    <div className={styles.image}>
-      <Image src={path} alt="" layout="fill" />;
-    </div>
+    <span className={styles.image}>
+      <Image src={path} alt="" />
+    </span>
   );
 };
 

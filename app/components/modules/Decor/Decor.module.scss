@@ -22,19 +22,14 @@
   }
 }
 
+.image-container {
+  min-width: 300px;
+}
+
 .image {
   align-self: stretch;
   object-fit: cover;
   width: 100%;
-
-  @include media(1145px) {
-    float: left;
-    margin-right: 30px;
-  }
-
-  @include media(635px) {
-    float: none;
-  }
 }
 
 .text {
@@ -46,7 +41,7 @@
   line-height: 1.45;
 
   @include media(1145px) {
-    padding: 30px 20px 20px 0px;
+    padding: 30px 20px 10px;
   }
 
   @include media(635px) {

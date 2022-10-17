@@ -9,14 +9,14 @@ const Watcher = () => {
   return (
     <ul className={styles["watcher-list"]}>
       <li className={styles["watcher-list__item"]}>
-        <Link href="#">
+        <Link href="/">
           <a className={styles["watcher-list__link"]}>
             <CameraIcon />
           </a>
         </Link>
       </li>
       <li className={styles["watcher-list__item"]}>
-        <Link href="#">
+        <Link href="/">
           <a className={styles["watcher-list__link"]}>
             <ObserverIcon />
           </a>

@@ -20,9 +20,9 @@ const Card = () => {
       </div>
       <Badges />
       <Watcher />
-      {/* <Link href="#">
+      <Link href="/">
         <a className={styles.link}></a>
-      </Link> */}
+      </Link>
     </li>
   );
 };

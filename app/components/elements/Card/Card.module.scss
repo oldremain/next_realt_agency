@@ -15,37 +15,11 @@
 }
 
 .image {
-  position: relative;
-  display: block;
+  @include flex($justify: center);
   height: 230px;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: -1px;
-    display: block;
-    height: 100%;
-    width: 21%;
-    backdrop-filter: blur(150px);
-    background: transparent;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    border-top-right-radius: 10px;
-    top: 0;
-    right: -1px;
-    display: block;
-    height: 100%;
-    width: 21%;
-    backdrop-filter: blur(10px);
-    background: transparent;
-  }
+  background: url("/images/blur.png") center / cover;
 }
 
 .price {
@@ -196,6 +170,16 @@
   height: 100%;
 }
 
-// .link {
+.link {
+  // @include visually-hidden;
 
-// }
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

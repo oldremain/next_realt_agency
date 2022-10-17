@@ -13,7 +13,7 @@ const Decor = () => {
           Decoration content
         </Heading>
         <div className={styles.content}>
-          <div>
+          <div className={styles["image-container"]}>
             <Image src={imgPath} alt="" className={styles.image} />
           </div>
           <div className={styles.text}>
