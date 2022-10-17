@@ -20,11 +20,12 @@ export const selectStyle = {
     opacity: 0.8,
     transition: "all 280ms",
   },
-  "&:hover .MuiOutlinedInput-notchedOutline": {
+  "&:hover .MuiInputBase-root .MuiOutlinedInput-notchedOutline": {
     borderColor: "#FFFFFF",
   },
-  "& .Mui-focused .MuiOutlinedInput-notchedOutline": {
+  "& .MuiInputBase-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
     borderColor: "#FFFFFF",
+    borderWidth: 1,
   },
   "& .MuiSvgIcon-root": {
     color: "#FFFFFF",
