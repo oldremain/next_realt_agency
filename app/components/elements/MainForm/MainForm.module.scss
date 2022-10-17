@@ -64,8 +64,10 @@
 }
 
 .rooms-control {
+  position: relative;
   width: 50px;
   height: 50px;
+  user-select: none;
 }
 
 .rooms-control:not(:last-child) {
@@ -84,9 +86,13 @@
   cursor: pointer;
 }
 
-.rooms-input {
-  appearance: none;
-}
+// .rooms-input {
+//   position: absolute;
+//   opacity: 0;
+//   cursor: pointer;
+//   height: 0;
+//   width: 0;
+// }
 
 .price-control {
   &:focus-within {
@@ -188,4 +194,35 @@
     background-color: $header-bg-color;
     color: $color-light;
   }
+}
+
+.rooms-label {
+  user-select: none;
+}
+
+.rooms-input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.rooms-input:checked ~ .checkmark {
+  outline: 2px solid $header-bg-color;
+}
+
+.rooms-input:checked ~ .rooms-label {
+  color: $header-bg-color;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  outline: 2px solid transparent;
+  pointer-events: none;
 }

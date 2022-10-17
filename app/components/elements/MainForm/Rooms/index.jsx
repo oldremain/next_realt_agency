@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "../MainForm.module.scss";
 
 const rooms_list = [
@@ -24,22 +25,31 @@ const rooms_list = [
 ];
 
 const Rooms = () => {
+  const [isChecked, setIsChecked] = useState(1);
+
+  const handleChange = (e) => {
+    setIsChecked(e.target.value);
+  };
+
   return (
     <fieldset className={styles["rooms-fieldset"]}>
       <legend className={styles["rooms-legend"]}>Комнаты</legend>
       <div className={styles["rooms-row"]}>
         {rooms_list.map((field, idx) => (
           <div key={idx} className={styles["rooms-control"]}>
-            <label htmlFor={field.id} className={styles["rooms-label"]}>
-              {field.label}
-            </label>
             <input
               id={field.id}
               type="radio"
               name="rooms"
               value={field.value}
+              onChange={handleChange}
+              checked={Number(isChecked) === field.value}
               className={styles["rooms-input"]}
             />
+            <label htmlFor={field.id} className={styles["rooms-label"]}>
+              {field.label}
+            </label>
+            <span className={styles.checkmark}></span>
           </div>
         ))}
       </div>
