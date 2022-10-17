@@ -1,3 +1,13 @@
+.filters-section {
+  @include media(432px) {
+    padding-top: 180px;
+  }
+
+  @include media(400px) {
+    padding-top: 160px;
+  }
+}
+
 .heading {
   margin-bottom: 30px;
   font-weight: 600;
@@ -7,11 +17,22 @@
 }
 
 .row {
-  @include flex($justify: space-between);
+  @include flex($justify: space-between, $wrap: wrap);
   margin-bottom: 24px;
+
+  @include media(1071px) {
+    justify-content: flex-start;
+    gap: 20px;
+  }
 }
 
 .buttons-row {
   @include flex($justify: flex-end);
   gap: 39px;
+
+  @include media(528px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
 }

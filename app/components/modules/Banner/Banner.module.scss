@@ -6,6 +6,10 @@
   margin-bottom: 60px;
   border-radius: 4px;
   background-color: $color-alabaster;
+
+  @include media(1230px) {
+    flex-wrap: wrap;
+  }
 }
 
 .aside__left {
@@ -46,18 +50,28 @@
 }
 
 .aside__right {
-  position: absolute;
-  top: 13px;
-  left: 55%;
+  position: relative;
+  top: -30px;
+  left: -50px;
 
-  span:first-child {
+  .house {
+    position: relative;
     z-index: 2;
   }
 
-  span:last-child {
-    top: -265px;
-    left: 305px;
+  .flat {
+    position: absolute;
+    top: -40px;
+    right: -120px;
     z-index: 1;
+  }
+
+  @include media(1230px) {
+    margin-left: auto;
+  }
+
+  @include media(654px) {
+    display: none;
   }
 }
 

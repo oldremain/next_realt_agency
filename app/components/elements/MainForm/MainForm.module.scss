@@ -8,6 +8,10 @@
   @include flex($direction: column);
   gap: 5px;
   flex: 0 1 30%;
+
+  @include media(740px) {
+    flex-grow: 1;
+  }
 }
 
 .location-label,
@@ -22,11 +26,12 @@
 }
 
 .location-input {
-  padding: 16px 19px 17px;
+  padding: 18px 19px 17px;
   border: 1px solid $border-input-color;
   border-radius: 4px;
   outline: none;
   width: 100%;
+  height: 55px;
 
   &:focus {
     outline: 2px solid $header-bg-color;
@@ -37,6 +42,10 @@
 .price-fieldset,
 .square-fieldset {
   border: none;
+
+  @include media(740px) {
+    flex-grow: 1;
+  }
 }
 
 .rooms-legend,

@@ -5,6 +5,12 @@
 
 .content {
   @include flex($justify: space-between);
+
+  @include media(480px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
 }
 
 .text {

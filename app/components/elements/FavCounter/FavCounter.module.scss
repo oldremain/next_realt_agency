@@ -12,7 +12,12 @@
     width: 1px;
     background-color: $color-light;
   }
+
+  @include media(652px) {
+    display: none;
+  }
 }
+
 .counter {
   @include flex($align: center, $justify: center);
   position: absolute;

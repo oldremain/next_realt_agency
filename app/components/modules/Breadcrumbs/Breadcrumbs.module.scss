@@ -5,6 +5,10 @@
 .breadcrumbs-list {
   @include flex;
   gap: 25px;
+
+  @include media(410px) {
+    flex-wrap: wrap;
+  }
 }
 
 .breadcrumbs-list__item {

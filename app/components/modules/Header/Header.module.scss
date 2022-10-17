@@ -7,10 +7,26 @@
   padding: 18px 0 17px;
   background-color: #265653;
 }
+
 .content {
-  @include flex($justify: space-between, $align: center);
+  @include flex($justify: space-between, $align: center, $wrap: wrap);
+  gap: 15px;
+
+  @include media(920px) {
+    justify-content: center;
+  }
 }
+
 .controls {
   @include flex($align: center);
   gap: 26px;
+
+  @include media(854px) {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  @include media(461px) {
+    justify-content: center;
+  }
 }

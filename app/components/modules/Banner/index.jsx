@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/future/image";
 
 import Container from "@components/layouts/Container";
 import Heading from "@components/elements/Heading";
@@ -87,8 +87,13 @@ const Banner = () => {
           </div>
           <div className={styles["aside__right"]}>
             <CircleLgIcon className={styles["circle-icon--lg"]} />
-            <Image src={house} alt="" />
-            <Image src={flat} alt="" />
+            <Image
+              src={house}
+              alt=""
+              layout="responsive"
+              className={styles.house}
+            />
+            <Image src={flat} alt="" className={styles.flat} />
           </div>
         </section>
       </Container>

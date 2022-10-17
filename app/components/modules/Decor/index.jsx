@@ -1,11 +1,9 @@
 import Image from "next/future/image";
-
 import Container from "@components/layouts/Container";
-
+import Heading from "@components/elements/Heading";
 import imgPath from "@public/images/decor/decor.png";
 
 import styles from "./Decor.module.scss";
-import Heading from "@components/elements/Heading";
 
 const Decor = () => {
   return (
@@ -15,7 +13,9 @@ const Decor = () => {
           Decoration content
         </Heading>
         <div className={styles.content}>
-          <Image src={imgPath} alt="" className={styles.image} />
+          <div>
+            <Image src={imgPath} alt="" className={styles.image} />
+          </div>
           <div className={styles.text}>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting

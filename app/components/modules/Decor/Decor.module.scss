@@ -1,5 +1,9 @@
 .aside {
   padding: 82px 0 101px;
+
+  @include media(651px) {
+    padding: 82px 0 50px;
+  }
 }
 
 .heading {
@@ -12,10 +16,25 @@
   border-radius: 10px;
   background-color: $color-alabaster;
   overflow: hidden;
+
+  @include media(1145px) {
+    display: block;
+  }
 }
 
 .image {
   align-self: stretch;
+  object-fit: cover;
+  width: 100%;
+
+  @include media(1145px) {
+    float: left;
+    margin-right: 30px;
+  }
+
+  @include media(635px) {
+    float: none;
+  }
 }
 
 .text {
@@ -25,4 +44,12 @@
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 1.45;
+
+  @include media(1145px) {
+    padding: 30px 20px 20px 0px;
+  }
+
+  @include media(635px) {
+    padding: 30px 20px 20px;
+  }
 }

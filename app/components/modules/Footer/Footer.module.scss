@@ -1,6 +1,14 @@
 .footer {
   padding: 100px 116px;
   background-color: $color-alabaster;
+
+  @include media(654px) {
+    padding: 50px 58px;
+  }
+
+  @include media(460px) {
+    padding: 40px 10px;
+  }
 }
 
 .heading {
@@ -12,11 +20,30 @@
 
 .contacts {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 170px;
+  grid-template-columns: repeat(2, 1fr) minmax(300px, 1fr);
+  justify-items: start;
+
+  @include media(1270px) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+
+  @include media(896px) {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
 }
 
 .socials {
   @include flex($direction: column);
   gap: 13px;
+  justify-self: end;
+
+  @include media(1270px) {
+    justify-self: start;
+  }
+
+  @include media(896px) {
+    padding-left: 40px;
+  }
 }
