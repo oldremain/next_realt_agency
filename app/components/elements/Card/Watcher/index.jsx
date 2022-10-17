@@ -14,6 +14,7 @@ const Watcher = () => {
             <CameraIcon />
           </a>
         </Link>
+        <span className={styles["watcher-tooltip"]}>Видео</span>
       </li>
       <li className={styles["watcher-list__item"]}>
         <Link href="/">
@@ -21,6 +22,7 @@ const Watcher = () => {
             <ObserverIcon />
           </a>
         </Link>
+        <span className={styles["watcher-tooltip"]}>Обзор</span>
       </li>
     </ul>
   );
