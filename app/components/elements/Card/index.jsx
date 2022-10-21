@@ -9,13 +9,13 @@ import Watcher from "./Watcher";
 
 import styles from "./Card.module.scss";
 
-const Card = () => {
+const Card = ({ id }) => {
   return (
     <li className={styles.container}>
       <CardImage />
       <Price />
       <div className={styles.body}>
-        <Address />
+        <Address id={id} />
         <Info />
       </div>
       <Badges />

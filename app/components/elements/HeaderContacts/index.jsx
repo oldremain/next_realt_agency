@@ -18,8 +18,12 @@ const HeaderContacts = () => {
       }}
       sx={selectStyle}
     >
-      <MenuItem sx={optionStyle}>{CONTACTS_VALUE.TEL1}</MenuItem>
-      <MenuItem sx={optionStyle}>{CONTACTS_VALUE.TEL2}</MenuItem>
+      <MenuItem value={CONTACTS_VALUE.TEL1} sx={optionStyle}>
+        {CONTACTS_VALUE.TEL1}
+      </MenuItem>
+      <MenuItem value={CONTACTS_VALUE.TEL2} sx={optionStyle}>
+        {CONTACTS_VALUE.TEL2}
+      </MenuItem>
     </TextField>
   );
 };

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, FormControl, Input, InputLabel, IconButton } from "@mui/material";
+import { Box } from "@mui/material";
 import Logo from "@components/elements/Logo";
 import Container from "@components/layouts/Container";
 import SearchForm from "@components/elements/SearchForm";
@@ -29,8 +29,6 @@ const Header = () => {
   const handleSelectCurrency = (e) => {
     setCurrency(e.target.value);
   };
-
-  const handleSelectContact = (e) => {};
 
   return (
     <header className={styles.header}>

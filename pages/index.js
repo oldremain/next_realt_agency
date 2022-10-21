@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { Provider } from "react-redux";
+import { store } from "app/store";
 
 import MainLayout from "@components/layouts/MainLayout";
 import Breadcrumbs from "@components/modules/Breadcrumbs";
@@ -31,7 +33,11 @@ const Home = () => {
 };
 
 Home.getLayout = function (page) {
-  return <MainLayout>{page}</MainLayout>;
+  return (
+    <Provider store={store}>
+      <MainLayout>{page}</MainLayout>
+    </Provider>
+  );
 };
 
 export default Home;

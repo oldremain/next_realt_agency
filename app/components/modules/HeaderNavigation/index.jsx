@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
+import { useEffect, useState } from "react";
 import Container from "@components/layouts/Container";
 
 import ChevronIcon from "@public/icons/chevron_link.svg";
@@ -40,6 +41,8 @@ const navigation_links = [
 ];
 
 const HeaderNavigation = () => {
+  const [domLoaded, setDomLoaded] = useState(false);
+
   const isTabletOrMobile = useMediaQuery({
     query: "(min-width: 654px)",
   });
@@ -48,9 +51,11 @@ const HeaderNavigation = () => {
     query: "(min-width: 433px)",
   });
 
+  useEffect(() => setDomLoaded(true), []);
+
   return (
     <>
-      {isShowNavigation && (
+      {domLoaded && isShowNavigation && (
         <div className={styles.wrapper}>
           <Container>
             <nav className={styles.navigation}>

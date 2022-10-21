@@ -5,6 +5,8 @@ import Card from "@components/elements/Card";
 
 import styles from "./Cards.module.scss";
 
+const cards_items = [1, 2, 3, 4, 5, 6, 7, 8];
+
 const Cards = () => {
   return (
     <section className={styles.section}>
@@ -16,13 +18,9 @@ const Cards = () => {
           <ProductFilter />
         </div>
         <ul className={styles["cards-container"]}>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {cards_items.map((card) => (
+            <Card key={card} id={card} />
+          ))}
         </ul>
       </Container>
     </section>
