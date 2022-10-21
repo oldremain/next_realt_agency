@@ -24,6 +24,11 @@
     justify-content: flex-start;
     gap: 20px;
   }
+
+  @include media(528px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .buttons-row {

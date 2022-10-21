@@ -86,14 +86,6 @@
   cursor: pointer;
 }
 
-// .rooms-input {
-//   position: absolute;
-//   opacity: 0;
-//   cursor: pointer;
-//   height: 0;
-//   width: 0;
-// }
-
 .price-control {
   &:focus-within {
     outline: 2px solid $header-bg-color;

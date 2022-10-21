@@ -25,6 +25,7 @@ const Price = () => {
             </label>
             <input
               type="number"
+              min={0}
               id={control.label}
               name={control.name}
               placeholder={control.label}
